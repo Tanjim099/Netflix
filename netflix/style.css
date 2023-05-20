@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("heroimage.jpg"); */
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.93)),
+    url('heroimage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#navbar{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo{
+    width: 140px;
+}
+#login{
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    padding: 7px 17px;
+    border-radius: 3px;
+}
+#language{
+    padding: 5px 17px;
+    font-size: 15px;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    border-radius: 3px;
+}
+#herocenterbox{
+    text-align: center;
+    color: white;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#herocenterbox .title{
+    font-size: 65px;
+    font-weight: 1500;
+}
+#herocenterbox h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+#herocenterbox p{
+    font-size: 22px;
+    font-size: 600;
+}
+#hero_inputbox{
+    width: 25%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 13px;
+}
+#getstartedbtn{
+    padding: 15.5px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.s02_container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 30px 0px;
+}
+.s02_leftbox{
+    padding-top: 10%;
+    color: white;
+}
+.s02_leftbox h1{
+    font-size: 56px;
+    font-weight: 800;
+}
+.s02_leftbox h2{
+    padding-top: 15px;
+}
+.formediaquery{
+    display: none;
+}
+#downloadbox{
+    width: 320px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 110px;
+    left: 25%;
+}
+.border{
+    border: 4px solid rgb(46, 45, 45);
+}
+.faqbox{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+.faqbox h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.accordion_title{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(58, 57, 56);
+    padding: 15px;
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordion_content{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(41, 39, 39);
+    padding: 10px;
+    display: none;
+}
+
+.accordion_item.active .accordion_content{
+    display: block;
+}
+
+#herocenterbox1{
+    text-align: center;
+    color: white;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#herocenterbox1 p{
+    font-size: 22px;
+    font-size: 600;
+}
+#footer{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+}
+#footer div a{
+    color: white;
+}
+
+#netflixindia{
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+
+/* =========================== */
+/* Login Page start */
+
+#loginbox{
+    width: 420px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 50px 40px;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.33))
+}
+
+#loginform{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#loginform h1{
+    color: white;
+}
+
+#loginform div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#loginform div input{
+    padding: 13px;
+    background-color: rgb(68, 68, 68);
+    font-size: 16px;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+}
+#loginform div button{
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#need{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(168, 168, 168);
+    margin-top: 10px;
+}
+#need a{
+    color: white;
+}
+#signup{
+    margin-top: 30px;
+    color: rgb(168, 168, 168);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#signup p a{
+    color: white;
+}
+#signup p span{
+    color: blue;
+    cursor: pointer;
+}
+
+#loginpagefooter{
+    margin-top: 60px;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.23))
+}
+#loginpagefooterbox{
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#loginpagefooterbox div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+#loginpagefooterbox div p, a{
+    color: rgb(168, 168, 168);
+}
+
+#loginpageborder{
+    display: none;
+}
+/* =========================== */
+@media only screen and (max-width: 600px) {
+    #navbar{
+        width: 90%;
+        margin: auto;
+    }
+    #herocenterbox div{
+        display: flex;
+        flex-direction: column;
+    }
+    #hero_inputbox{
+        width: 90%;
+        margin: auto;
+        border-radius: 5px;
+    }
+    #getstartedbtn{
+        width: 150px;
+        padding: 10px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .s02_container{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    .s02_rightbox img{
+        width: 400px;
+    }
+    .s02_leftbox h1{
+        text-align: center;
+        font-size: 36px;
+        font-weight: 800;
+    }
+    .s02_leftbox h2{
+        text-align: center;
+        padding-top: 15px;
+    }
+    .formediaquery{
+        display: block;
+    }
+    .fordesktop{
+        display: none;
+    }
+    #downloadbox{
+        width: 220px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        bottom: 110px;
+        left: 22%;
+    }
+    #downloadbox img{
+        width: 50px;
+    }
+    .faqbox h1{
+        font-size: 35px;
+        font-family: 700;
+        color: white;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    #loginpagebody{
+        background-color: black;
+    }
+    #loginbox{
+        width: 400px;
+    }
+    #loginpageborder{
+        display: block;
+    }
+  }
